@@ -1,0 +1,34 @@
+output "vpc_id" {
+  value = aws_vpc.main.id
+  description = "ID of the VPC"
+}
+
+output "public_subnet_blue_id" {
+  value = aws_subnet.public_blue.id
+  description = "ID of the public blue subnet"
+}
+
+output "public_subnet_green_id" {
+  value = aws_subnet.public_green.id
+  description = "ID of the public green subnet"
+}
+
+output "private_subnet_blue_id" {
+  value = aws_subnet.private_blue.id
+  description = "ID of the private blue subnet"
+}
+
+output "private_subnet_green_id" {
+  value = aws_subnet.private_green.id
+  description = "ID of the private green subnet"
+}
+
+output "nat_gateway_blue_id" {
+  value       = aws_nat_gateway.nat_blue.id
+  description = "ID of the blue NAT Gateway"
+}
+
+output "nat_gateway_green_id" {
+  value       = aws_nat_gateway.nat_green.id
+  description = "ID of the green NAT Gateway"
+}

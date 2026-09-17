@@ -11,6 +11,10 @@ provider "aws" {
   region = "eu-central-1"
 }
 
+module "my_network" {
+  source = "./network"
+}
+
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "tonkata-tf-bucket-123-test"
 }
